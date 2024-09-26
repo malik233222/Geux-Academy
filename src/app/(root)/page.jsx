@@ -1,3 +1,4 @@
+import ForeignStudents from "@/components/ForeignStudents";
 import Hero from "@/components/Hero";
 import HighPayingJobs from "@/components/HighPayingJobs";
 import StudentsOpinion from "@/components/StudentsOpinion";
@@ -16,6 +17,7 @@ export default function Home() {
       <WhyUs />
       <HighPayingJobs/>
       <StudentsOpinion/>
+      <ForeignStudents/>
     </div>
   );
 }
