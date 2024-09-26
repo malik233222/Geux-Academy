@@ -1,5 +1,6 @@
 import Hero from "@/components/Hero";
 import HighPayingJobs from "@/components/HighPayingJobs";
+import StudentsOpinion from "@/components/Students Opinions/StudentsOpinion";
 import WhyUs from "@/components/WhyUs";
 import { Poppins } from "next/font/google";
 
@@ -13,9 +14,8 @@ export default function Home() {
     <div className={`${poppins.variable} font-pop`}>
       <Hero />
       <WhyUs />
-     <HighPayingJobs/>
-      <br />
-      telebelerin fikirleri
+      <HighPayingJobs/>
+      <StudentsOpinion/>
     </div>
   );
 }
