@@ -1,6 +1,6 @@
 import Hero from "@/components/Hero";
 import HighPayingJobs from "@/components/HighPayingJobs";
-import StudentsOpinion from "@/components/Students Opinions/StudentsOpinion";
+import StudentsOpinion from "@/components/StudentsOpinion";
 import WhyUs from "@/components/WhyUs";
 import { Poppins } from "next/font/google";
 
