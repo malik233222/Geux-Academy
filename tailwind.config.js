@@ -16,7 +16,10 @@ module.exports = {
         'gray-custom-button':'#CDDCE5',
         'gray-jobs' :'#E4F5FFB2',
         'gray-students' :'#EFF0F5',
-
+        'gray-career' :'#F8F8F8',
+        'black-helpUs1' :'#20222E',
+        'gray-helpUs2' :'#323547',
+        
       },
       fontFamily: {
         pop: ['var(--font-poppins)'],

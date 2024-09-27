@@ -1,9 +1,110 @@
-import React from 'react'
+import Image from "next/image";
+import React from "react";
 
 const Footer = () => {
-  return (
-    <div>Footer</div>
-  )
-}
+  const navigation = {
+    merkezimiz: [
+      { name: "FAQ", href: "#" },
+      { name: "Tələbələrin fikirləri", href: "#" },
+      { name: "Partnyorlar", href: "#" },
+    ],
+    temelDersler: [
+      { name: "UX/UI dizayn", href: "#" },
+      { name: "Qrafik dizayn", href: "#" },
+      { name: "Veb dizayn", href: "#" },
+    ],
+    advancedDersler: [
+      { name: "UX/UI dizayn", href: "#" },
+    ],
+    elaqe: {
+      phone: "(+994 55) 710 12 86",
+      email: "info@geux.design",
+    },
+  };
 
-export default Footer
+  return (
+    <footer className="bg-white border-t border-gray-200">
+      <div className="max-w-7xl mx-auto py-8 px-4 sm:px-6 lg:px-8">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+          {/* Logo */}
+          <div>
+            <div className="w-40 h-auto">
+              <Image src="/images/logofooter.png" alt="Logo" className="w-full h-auto" width={200 } height={130} />
+            </div>
+          </div>
+
+          {/* Merkezimiz */}
+          <div>
+            <h3 className="text-sm font-semibold text-gray-900">Merkezimiz</h3>
+            <ul className="mt-4 space-y-2">
+              {navigation.merkezimiz.map((item) => (
+                <li key={item.name}>
+                  <a href={item.href} className="text-gray-500 hover:text-gray-900">
+                    {item.name}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Temel dersler */}
+          <div>
+            <h3 className="text-sm font-semibold text-gray-900">Temel dersler</h3>
+            <ul className="mt-4 space-y-2">
+              {navigation.temelDersler.map((item) => (
+                <li key={item.name}>
+                  <a href={item.href} className="text-gray-500 hover:text-gray-900">
+                    {item.name}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Əlaqə vasitələri */}
+          <div className="flex flex-col items-end text-center">
+            <h3 className="text-sm font-semibold text-gray-900 text-center w-2/3">Əlaqə vasitələri</h3>
+            <ul className="mt-4 space-y-2">
+              <li className="text-gray-500">{navigation.elaqe.phone}</li>
+              <li className="text-gray-500">{navigation.elaqe.email}</li>
+            </ul>
+          </div>
+        </div>
+
+        <div className="mt-8 border-t border-gray-200 pt-8 flex justify-between">
+          <p className="text-sm text-gray-500">
+            © 2018-2023 GEUX Design Academy. Bütün hüquqlar qorunur.
+          </p>
+          <div className="flex space-x-6">
+            <a href="#" className="text-gray-400 hover:text-gray-500">
+              <span className="sr-only">Facebook</span>
+              <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                {/* SVG code for Facebook icon */}
+              </svg>
+            </a>
+            <a href="#" className="text-gray-400 hover:text-gray-500">
+              <span className="sr-only">LinkedIn</span>
+              <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                {/* SVG code for LinkedIn icon */}
+              </svg>
+            </a>
+            <a href="#" className="text-gray-400 hover:text-gray-500">
+              <span className="sr-only">Instagram</span>
+              <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                {/* SVG code for Instagram icon */}
+              </svg>
+            </a>
+            <a href="#" className="text-gray-400 hover:text-gray-500">
+              <span className="sr-only">YouTube</span>
+              <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                {/* SVG code for YouTube icon */}
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  );
+};
+
+export default Footer;

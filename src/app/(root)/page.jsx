@@ -1,4 +1,6 @@
 import ForeignStudents from "@/components/ForeignStudents";
+import GraduateCareer from "@/components/GraduateCareer";
+import HelpUs from "@/components/HelpUs";
 import Hero from "@/components/Hero";
 import HighPayingJobs from "@/components/HighPayingJobs";
 import StudentsOpinion from "@/components/StudentsOpinion";
@@ -15,9 +17,11 @@ export default function Home() {
     <div className={`${poppins.variable} font-pop`}>
       <Hero />
       <WhyUs />
-      <HighPayingJobs/>
-      <StudentsOpinion/>
-      <ForeignStudents/>
+      <HighPayingJobs />
+      <StudentsOpinion />
+      <ForeignStudents />
+      <GraduateCareer />
+      <HelpUs />
     </div>
   );
 }

@@ -11,8 +11,24 @@ const ForeignStudents = () => {
           </h4>
         </div>
       </div>
-      <div className="foreign-students flex items-center gap-6 justify-center">
+      <div className="foreign-students w-full flex items-center gap-6 justify-center">
         <div className="left flex gap-3">
+          <div className="relative">
+            <Image
+              src="/images/ekstremaduragirl.svg"
+              className=""
+              width={120}
+              height={120}
+            />
+            <div>
+              <Image
+                src="/images/ekstremaduraflag.svg"
+                className="absolute top-5 right-0"
+                width={30}
+                height={30}
+              />
+            </div>
+          </div>
           <div className="relative">
             <Image
               src="/images/ekstremaduragirl.svg"
@@ -97,7 +113,23 @@ const ForeignStudents = () => {
                 height={30}
               />
             </div>
-          </div>{" "}
+          </div>
+          <div className="relative">
+            <Image
+              src="/images/ekstremaduragirl.svg"
+              className=""
+              width={120}
+              height={120}
+            />
+            <div>
+              <Image
+                src="/images/ekstremaduraflag.svg"
+                className="absolute top-5 right-0"
+                width={30}
+                height={30}
+              />
+            </div>
+          </div>
           <div className="relative">
             <Image
               src="/images/ekstremaduragirl.svg"
