@@ -78,27 +78,24 @@ const Footer = () => {
           <div className="flex space-x-6">
             <a href="#" className="text-gray-400 hover:text-gray-500">
               <span className="sr-only">Facebook</span>
-              <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                {/* SVG code for Facebook icon */}
-              </svg>
+              <Image src={"/images/facebook.svg"} width={28} height={28}/>
+
             </a>
             <a href="#" className="text-gray-400 hover:text-gray-500">
               <span className="sr-only">LinkedIn</span>
-              <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                {/* SVG code for LinkedIn icon */}
-              </svg>
+              <Image src={"/images/linkedin.svg"} width={28} height={28}/>
+
             </a>
             <a href="#" className="text-gray-400 hover:text-gray-500">
               <span className="sr-only">Instagram</span>
-              <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                {/* SVG code for Instagram icon */}
-              </svg>
+              <Image src={"/images/instagram.svg"} width={28} height={28}/>
+
             </a>
             <a href="#" className="text-gray-400 hover:text-gray-500">
               <span className="sr-only">YouTube</span>
-              <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+              <Image src={"/images/youtube.svg"} width={28} height={28}/>
                 {/* SVG code for YouTube icon */}
-              </svg>
+              
             </a>
           </div>
         </div>
