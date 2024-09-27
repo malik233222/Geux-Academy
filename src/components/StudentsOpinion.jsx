@@ -3,9 +3,9 @@ import React from "react";
 
 const StudentsOpinion = () => {
   return (
-    <div className="bg-gray-students ">
-      <div className="max-w-7xl mx-auto text-white  justify-between items-center">
-        <div className="flex pt-20 justify-between w-full">
+    <div className="bg-gray-students">
+      <div className="max-w-7xl mx-auto text-white justify-between items-center px-4">
+        <div className="flex pt-20 justify-between items-center">
           <h4 className="text-3xl text-black font-semibold">
             Tələbələrin fikirləri
           </h4>
@@ -17,68 +17,30 @@ const StudentsOpinion = () => {
           </button>
         </div>
         <div className="students my-10">
-          <div className="card flex gap-6">
-            <div className="relative">
-              <Image
-                src="/images/nurcahan.svg"
-                alt="student photo"
-                width={300}
-                height={400}
-              />
-              <p
-                className="rounded-md absolute bottom-14 left-10
-              font-semibold
-              text-sm  text-black px-3 py-2 bg-white  shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
-              >
-               Nur Cahan
-              </p>
-            </div>
-            <div className="relative">
-              <Image
-                src="/images/jhondoe.svg"
-                alt="student photo"
-                width={300}
-                height={400}
-              />
-              <p
-                className="rounded-md absolute bottom-14 left-10
-              font-semibold
-              text-sm  text-black px-3 py-2 bg-white  shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
-              >
-              Jon Doe
-              </p>
-            </div>
-            <div className="relative">
-              <Image
-                src="/images/agaagayev.svg"
-                alt="student photo"
-                width={300}
-                height={400}
-              />
-              <p
-                className="rounded-md absolute bottom-14 left-10
-              font-semibold
-              text-sm  text-black px-3 py-2 bg-white  shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
-              >
-              Ağa Ağayev
-              </p>
-            </div>
-            <div className="relative">
-              <Image
-                src="/images/sirin.svg"
-                alt="student photo"
-                width={300}
-                height={400}
-              />
-              <p
-                className="rounded-md absolute bottom-14 left-10
-              font-semibold
-              text-sm  text-black px-3 py-2 bg-white  shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
-              >
-               Şirin Zəkəriyya
-              </p>
-            </div>
-          
+          <div className="card flex flex-wrap justify-center gap-6">
+            {/* Öğrenci Kartları */}
+            {[
+              { name: "Nur Cahan", image: "/images/nurcahan.svg" },
+              { name: "Jon Doe", image: "/images/jhondoe.svg" },
+              { name: "Ağa Ağayev", image: "/images/agaagayev.svg" },
+              { name: "Şirin Zəkəriyya", image: "/images/sirin.svg" },
+            ].map((student, index) => (
+              <div key={index} className="relative w-64">
+                <Image
+                  src={student.image}
+                  alt={`${student.name} photo`}
+                  width={300}
+                  height={400}
+                  className="w-full h-auto"
+                />
+                <p
+                  className="rounded-md absolute bottom-14 left-10
+                  font-semibold text-sm text-black px-3 py-2 bg-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                >
+                  {student.name}
+                </p>
+              </div>
+            ))}
           </div>
         </div>
       </div>
