@@ -27,9 +27,9 @@ const Footer = () => {
       <div className="max-w-7xl mx-auto py-8 px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Logo */}
-          <div>
+          <div className="flex justify-center md:justify-start">
             <div className="w-40 h-auto">
-              <Image src="/images/logofooter.png" alt="Logo" className="w-full h-auto" width={200 } height={130} />
+              <Image src="/images/logofooter.png" alt="Logo" className="w-full h-auto" width={200} height={130} />
             </div>
           </div>
 
@@ -62,8 +62,8 @@ const Footer = () => {
           </div>
 
           {/* Əlaqə vasitələri */}
-          <div className="flex flex-col items-end text-center">
-            <h3 className="text-sm font-semibold text-gray-900 text-center w-2/3">Əlaqə vasitələri</h3>
+          <div className="flex flex-col items-center md:items-end text-center md:text-right">
+            <h3 className="text-sm font-semibold text-gray-900">Əlaqə vasitələri</h3>
             <ul className="mt-4 space-y-2">
               <li className="text-gray-500">{navigation.elaqe.phone}</li>
               <li className="text-gray-500">{navigation.elaqe.email}</li>
@@ -71,31 +71,26 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="mt-8 border-t border-gray-200 pt-8 flex justify-between">
-          <p className="text-sm text-gray-500">
+        <div className="mt-8 border-t border-gray-200 pt-8 flex flex-col md:flex-row justify-between items-center">
+          <p className="text-sm text-gray-500 text-center md:text-left">
             © 2018-2023 GEUX Design Academy. Bütün hüquqlar qorunur.
           </p>
-          <div className="flex space-x-6">
+          <div className="flex space-x-6 mt-4 md:mt-0">
             <a href="#" className="text-gray-400 hover:text-gray-500">
               <span className="sr-only">Facebook</span>
-              <Image src={"/images/facebook.svg"} width={28} height={28}/>
-
+              <Image src={"/images/facebook.svg"} width={28} height={28} />
             </a>
             <a href="#" className="text-gray-400 hover:text-gray-500">
               <span className="sr-only">LinkedIn</span>
-              <Image src={"/images/linkedin.svg"} width={28} height={28}/>
-
+              <Image src={"/images/linkedin.svg"} width={28} height={28} />
             </a>
             <a href="#" className="text-gray-400 hover:text-gray-500">
               <span className="sr-only">Instagram</span>
-              <Image src={"/images/instagram.svg"} width={28} height={28}/>
-
+              <Image src={"/images/instagram.svg"} width={28} height={28} />
             </a>
             <a href="#" className="text-gray-400 hover:text-gray-500">
               <span className="sr-only">YouTube</span>
-              <Image src={"/images/youtube.svg"} width={28} height={28}/>
-                {/* SVG code for YouTube icon */}
-              
+              <Image src={"/images/youtube.svg"} width={28} height={28} />
             </a>
           </div>
         </div>
