@@ -9,7 +9,7 @@ const HighPayingJobs = () => {
         {/* Senin grid algoritmanla */}
         <div className="w-full grid grid-cols-1 gap-5 md:grid-cols-[repeat(6,auto)]">
 
-          {(new Array(10)).fill("test").map((item, index) => (
+          {(new Array(5)).fill("test").map((item, index) => (
             <JobsCard
               key={index}
               className={(index % 5) < 3 ? "col-span-2" : "col-span-3"}
