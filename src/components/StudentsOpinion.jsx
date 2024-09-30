@@ -1,3 +1,4 @@
+'use client'
 import Image from "next/image";
 import React from "react";
 
@@ -18,7 +19,6 @@ const StudentsOpinion = () => {
         </div>
         <div className="students my-10">
           <div className="card flex flex-wrap justify-center gap-6">
-            {/* Öğrenci Kartları */}
             {[
               { name: "Nur Cahan", image: "/images/nurcahan.svg" },
               { name: "Jon Doe", image: "/images/jhondoe.svg" },
@@ -44,6 +44,16 @@ const StudentsOpinion = () => {
           </div>
         </div>
       </div>
+      <style jsx>{`
+        @media (max-width: 768px) {
+          .card {
+            justify-content: space-around;
+          }
+          .card > div {
+            flex: 0 0 calc(50% - 1rem);
+          }
+        }
+      `}</style>
     </div>
   );
 };
