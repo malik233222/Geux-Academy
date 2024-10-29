@@ -27,7 +27,7 @@ const Navbar = () => {
           >
             {isMenuOpen ? (
               <Image
-                src="/images/linkedin.svg"
+                src="/images/flip-backward.svg"
                 alt="Close Icon"
                 width={24}
                 height={24}
@@ -35,7 +35,7 @@ const Navbar = () => {
               />
             ) : (
               <Image
-                src="/images/facebook.svg"
+                src="/images/menu.svg"
                 alt="Menu Icon"
                 width={24}
                 height={24}

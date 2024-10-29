@@ -25,11 +25,17 @@ const Footer = () => {
   return (
     <footer className="bg-white border-t border-gray-200">
       <div className="max-w-7xl mx-auto py-8 px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-8 text-center md:text-left">
           {/* Logo */}
           <div className="flex justify-center md:justify-start">
             <div className="w-40 h-auto">
-              <Image src="/images/logofooter.png" alt="Logo" className="w-full h-auto" width={200} height={130} />
+              <Image
+                src="/images/logofooter.png"
+                alt="Logo"
+                className="w-full h-auto"
+                width={200}
+                height={130}
+              />
             </div>
           </div>
 
@@ -39,7 +45,10 @@ const Footer = () => {
             <ul className="mt-4 space-y-2">
               {navigation.merkezimiz.map((item) => (
                 <li key={item.name}>
-                  <a href={item.href} className="text-gray-500 hover:text-gray-900">
+                  <a
+                    href={item.href}
+                    className="text-gray-500 hover:text-gray-900"
+                  >
                     {item.name}
                   </a>
                 </li>
@@ -53,7 +62,10 @@ const Footer = () => {
             <ul className="mt-4 space-y-2">
               {navigation.temelDersler.map((item) => (
                 <li key={item.name}>
-                  <a href={item.href} className="text-gray-500 hover:text-gray-900">
+                  <a
+                    href={item.href}
+                    className="text-gray-500 hover:text-gray-900"
+                  >
                     {item.name}
                   </a>
                 </li>
@@ -75,7 +87,7 @@ const Footer = () => {
           <p className="text-sm text-gray-500 text-center md:text-left">
             © 2018-2023 GEUX Design Academy. Bütün hüquqlar qorunur.
           </p>
-          <div className="flex space-x-6 mt-4 md:mt-0">
+          <div className="flex space-x-6 mt-4 md:mt-0 justify-center md:justify-end">
             <a href="#" className="text-gray-400 hover:text-gray-500">
               <span className="sr-only">Facebook</span>
               <Image src={"/images/facebook.svg"} width={28} height={28} />
